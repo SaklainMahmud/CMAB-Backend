@@ -10,6 +10,7 @@ import {
 } from 'typeorm';
 import { AdminEntity } from './admin.entity';
 
+
 @Entity({ name: 'activities' })
 @Index('idx_activities_date', ['date'])
 @Index('idx_activities_created_at', ['createdAt'])
